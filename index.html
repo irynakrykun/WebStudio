@@ -22,10 +22,16 @@
     <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body>
-    <!---- <header class="site-header">
+    <header class="site-header">
       <div class="container header-container">
         <nav class="header-nav">
           <a href="./index.html" class="logo link"><span class="colortext"> Web</span>Studio </a>
+          <button type="button" class="menu-button">
+            <svg width="40" height="40">
+              <use href="./images/icons.svg#menu_40px-1"></use>
+            </svg>
+          </button>
+
           <ul class="site-nav">
             <li><a href="./index.html" class="link current">Студия</a></li>
             <li><a href="./portfolio.index.html" class="link">Портфолио</a></li>
@@ -51,7 +57,7 @@
           </li>
         </ul>
       </div>
-    </header>-->
+    </header>
     <main>
       <section class="hero overlay">
         <div class="container">
@@ -697,6 +703,12 @@
         </form>
       </div>
     </div>
+
+    <!--Menu-->
+    <div class="menu-overley">
+      <div class="menu-container"></div>
+    </div>
+    <script src="./js/mobile-menu.js"></script>
 
     <script src="./js/modal.js"></script>
   </body>
