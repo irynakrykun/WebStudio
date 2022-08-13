@@ -566,17 +566,26 @@ textarea:hover, textarea:focus {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     gap: 30px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 }
 .features__list > li {
   -ms-flex-preferred-size: calc((100% - 30px) * 1 / 2);
       flex-basis: calc((100% - 30px) * 1 / 2);
   display: block;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 @media screen and (min-width: 1200px) {
   .features__list > li {
     -ms-flex-preferred-size: 270px;
         flex-basis: 270px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 }
 
@@ -645,6 +654,9 @@ textarea:hover, textarea:focus {
   display: -ms-flexbox;
   display: flex;
   gap: 30px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .work__item {
@@ -706,6 +718,9 @@ textarea:hover, textarea:focus {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     gap: 30px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 }
 
@@ -723,6 +738,9 @@ textarea:hover, textarea:focus {
   .team__item {
     -ms-flex-preferred-size: 270px;
         flex-basis: 270px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 }
 
@@ -813,18 +831,27 @@ textarea:hover, textarea:focus {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   gap: 30px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 @media screen and (min-width: 480px) {
   .clients__list > li {
     -ms-flex-preferred-size: calc((100% - 30px) * 1 / 2);
         flex-basis: calc((100% - 30px) * 1 / 2);
     display: block;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 }
 @media screen and (min-width: 768px) {
   .clients__list > li {
     -ms-flex-preferred-size: 226px;
         flex-basis: 226px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -1163,18 +1190,9 @@ address .link:hover, address .link:focus {
 @media screen and (min-width: 1200px) {
   .buttons-list {
     margin-bottom: 50px;
-  }
-}
-
-.btn-item {
-  display: block;
-  -ms-flex-preferred-size: calc((100% - 8px) * 1 / 3);
-      flex-basis: calc((100% - 8px) * 1 / 3);
-}
-@media screen and (min-width: 768px) {
-  .btn-item {
-    -ms-flex-preferred-size: calc((100% - 8px) * 4 / 5);
-        flex-basis: calc((100% - 8px) * 4 / 5);
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 }
 
@@ -1185,12 +1203,25 @@ address .link:hover, address .link:focus {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   gap: 30px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
-.portfolio-list > .portfolio-item {
-  -ms-flex-preferred-size: calc((100%- 30px) * (3-1))/3;
-      flex-basis: calc((100%- 30px) * (3-1))/3;
-  display: block;
+@media screen and (min-width: 768px) {
+  .portfolio-list > .portfolio-item {
+    -ms-flex-preferred-size: calc((100% - 30px) / 2);
+        flex-basis: calc((100% - 30px) / 2);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .portfolio-list > .portfolio-item {
+    -ms-flex-preferred-size: 370px;
+        flex-basis: 370px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
 }
 
 .portfolio-link {
