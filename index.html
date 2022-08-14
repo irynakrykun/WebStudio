@@ -24,14 +24,15 @@
   <body>
     <header class="site-header">
       <div class="container header-container">
-        <nav class="header-nav">
-          <a href="./index.html" class="logo link"><span class="colortext"> Web</span>Studio </a>
-          <button type="button" class="menu-button">
-            <svg width="40" height="40">
-              <use href="./images/icons.svg#menu_40px-1"></use>
+        <a href="./index.html" class="logo link"><span class="colortext"> Web</span>Studio </a>
+          <button type="button" class="menu-button is-open" aria-expanded="false" data-menu-button>
+            <svg width="40" height="40" aria-label="Переключатель меню">
+              <use class="menu-close" href="./images/icons.svg#close_40px-1"></use>
+              <use class="menu-open" href="./images/icons.svg#menu_40px-1"></use>
             </svg>
           </button>
-
+          <div class="menu-container is-open" data-menu>
+           <nav class="header-nav">                 
           <ul class="site-nav">
             <li><a href="./index.html" class="link current">Студия</a></li>
             <li><a href="./portfolio.index.html" class="link">Портфолио</a></li>
@@ -56,7 +57,51 @@
             >
           </li>
         </ul>
+        <ul class="header-social list">
+          <li class="header-social-item">
+            <a
+                      class="header-social-link link"
+                      href="#"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      aria-label="Instagram"
+                    >Instagram
+             </a>
+          </li>
+          <li class="header-social-item">
+            <a
+                      class="header-social-link link"
+                      href="#"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      aria-label="Twitter"
+                    >Twitter
+             </a>
+          </li>
+          <li class="header-social-item">
+            <a
+                      class="header-social-link link"
+                      href="#"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      aria-label="Facebook"
+                    >Facebook
+             </a>
+          </li>
+          <li class="header-social-item">
+            <a
+                      class="header-social-link link"
+                      href="#"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      aria-label="LinkedIn"
+                    >LinkedIn
+             </a>
+          </li>
+        </ul>
+        </div>
       </div>
+      
     </header>
     <main>
       <section class="hero overlay">
