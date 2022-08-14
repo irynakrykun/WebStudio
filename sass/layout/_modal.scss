@@ -28,13 +28,17 @@
   left: 50%;
   transform: translate(-50%, -50%) scale(1) rotate(0);
 
-  width: 528px;
-  min-height: 581px;
+  width: 450px;
+  min-height: 609px;
   background-color: $primery-bgc-color;
   opacity: 1;
   border-radius: 4px;
 
   transition: transform $animation, opacity $animation;
+  @media screen and (min-width: 1200px) {
+    width: 528px;
+    min-height: 581px;
+  }
 }
 
 .backdrop.is-hidden .modal {
