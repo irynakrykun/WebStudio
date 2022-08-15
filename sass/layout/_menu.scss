@@ -19,6 +19,9 @@
       transform: translate(0);
     }
   }
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
 }
 .mobail-menu-button {
   @media screen and (max-width: 767px) {
@@ -41,6 +44,9 @@
     &:focus {
       color: $accent-color;
     }
+  }
+   @media screen and (min-width: 768px) {
+    display: none;
   }
 }
 .menu-nav {
