@@ -1,6 +1,7 @@
 .header-container {
   position: relative;
 }
+
 .menu-container {
   position: relative;
   @media screen and (max-width: 767px) {
@@ -13,35 +14,35 @@
     padding: 48px 40px;
     overflow: scroll;
     background-color: $primery-bgc-color;
-  }
-  &.is-open {
-    display: block;
-  }
-  transform: translateX(100%);
-  &.is-open {
-    transform: translate(0);
+    transform: translateX(100%);
+    &.is-open {
+      transform: translate(0);
+    }
   }
 }
 .mobail-menu-button {
-  margin: 0;
-  position: absolute;
-  left: 50%;
-  width: 40px;
-  height: 40px;
-  padding: 0;
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
-  border: none;
-  cursor: pointer;
-  color: $title-text-color;
-  background-color: $primery-bgc-color;
-  &:hover,
-  &:focus {
-    color: $accent-color;
+  @media screen and (max-width: 767px) {
+    margin: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 40px;
+    height: 40px;
+    padding: 0;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    cursor: pointer;
+    color: $title-text-color;
+    background-color: $primery-bgc-color;
+    transition: color $animation;
+    &:hover,
+    &:focus {
+      color: $accent-color;
+    }
   }
 }
-
 .menu-nav {
   display: block;
   margin-bottom: 302px;
