@@ -166,6 +166,11 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 @media screen and (min-width: 768px) {
   .header-nav {
@@ -176,6 +181,17 @@ img {
   }
 }
 
+@media screen and (max-width: 767px) {
+  .contacts {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .site-nav {
+    display: none;
+  }
+}
 @media screen and (min-width: 768px) {
   .site-nav {
     display: -webkit-box;
@@ -326,6 +342,11 @@ img {
             transform: translate(0);
   }
 }
+@media screen and (min-width: 768px) {
+  .menu-container {
+    display: none;
+  }
+}
 
 @media screen and (max-width: 767px) {
   .mobail-menu-button {
@@ -354,6 +375,11 @@ img {
   }
   .mobail-menu-button:hover, .mobail-menu-button:focus {
     color: #2196f3;
+  }
+}
+@media screen and (min-width: 768px) {
+  .mobail-menu-button {
+    display: none;
   }
 }
 
@@ -483,7 +509,7 @@ img {
   }
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (max-width: 1199px) {
   .hero-title {
     width: 360px;
     margin: 0 auto;
@@ -793,10 +819,6 @@ textarea:hover, textarea:focus {
 .features__list > li {
   -ms-flex-preferred-size: calc((100% - 30px) * 1 / 2);
       flex-basis: calc((100% - 30px) * 1 / 2);
-  display: block;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
 }
 @media screen and (min-width: 1200px) {
   .features__list > li {
@@ -823,13 +845,21 @@ textarea:hover, textarea:focus {
   margin-bottom: 10px;
 }
 
-.features__text {
-  width: 100%;
-  font-size: 14px;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
-  margin-bottom: 30px;
-  color: #757575;
+@media screen and (max-width: 767px) {
+  .features__text {
+    width: 100%;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    margin-bottom: 30px;
+    color: #757575;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .features__text:last-child {
+    margin-bottom: 0;
+  }
 }
 
 .features__icon {
@@ -1330,7 +1360,7 @@ address .link:hover, address .link:focus {
 
 .form-email {
   margin-bottom: 20px;
-  width: 450px;
+  width: 100%;
   height: 50px;
   font-size: 16px;
   line-height: 1.25;
