@@ -41,8 +41,9 @@
     }
   }
 }
-@media screen and (max-width: 1199px) {
-  .hero-title {
+
+.hero-title {
+  @media screen and (max-width: 1199px) {
     width: 360px;
     margin: 0 auto;
     font-weight: 900;
@@ -54,15 +55,21 @@
     color: $primery-bgc-color;
     margin-bottom: 30px;
   }
-}
-@media screen and (min-width: 1200px) {
-  .hero-title {
+  @media screen and (min-width: 1200px) {
     width: 696px;
     font-size: 44px;
     line-height: 1.36;
+
+    margin: 0 auto;
+    font-weight: 900;
+
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: $primery-bgc-color;
+    margin-bottom: 30px;
   }
 }
-
 .button {
   display: inline-block;
   width: 200px;

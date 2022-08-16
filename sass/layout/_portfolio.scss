@@ -24,12 +24,14 @@
 }
 
 .buttons-list {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 8px;
-  row-gap: 15px;
-  margin-bottom: 40px;
-  justify-content: flex-start;
+  @media screen and (min-width: 480px) {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    row-gap: 15px;
+    margin-bottom: 40px;
+    justify-content: flex-start;
+  }
   @media screen and (min-width: 768px) {
     flex-wrap: nowrap;
     margin-bottom: 30px;
@@ -42,10 +44,12 @@
 }
 
 .portfolio-list {
-  display: flex;
-  flex-wrap: wrap;
-  gap: $card-sed-gap;
-  justify-content: center;
+  @media screen and (min-width: 480px) {
+    display: flex;
+    flex-wrap: wrap;
+    gap: $card-sed-gap;
+    justify-content: center;
+  }
 }
 .portfolio-list > .portfolio-item {
   @media screen and (min-width: 768px) {
