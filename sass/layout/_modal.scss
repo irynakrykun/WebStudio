@@ -8,6 +8,7 @@
   z-index: 100;
   opacity: 1;
   visibility: visible;
+  overflow-y: scroll;
 
   transition: opacity $animation, visibility $animation;
 }
@@ -22,25 +23,41 @@
   }
 }
 .modal {
-  padding: 40px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%) scale(1) rotate(0);
+  @media screen and (max-width: 479px) {
+    padding: 40px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -40%) scale(1) rotate(0);
 
-  width: 450px;
-  min-height: 609px;
-  background-color: $primery-bgc-color;
-  opacity: 1;
-  border-radius: 4px;
+    min-width: 300px;
+    min-height: 609px;
+    background-color: $primery-bgc-color;
+    opacity: 1;
+    border-radius: 4px;
 
-  transition: transform $animation, opacity $animation;
-  @media screen and (min-width: 1200px) {
-    width: 528px;
-    min-height: 581px;
+    transition: transform $animation, opacity $animation;
+    @media screen and (min-width: 480px) {
+      padding: 40px;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%) scale(1) rotate(0);
+
+      width: 450px;
+      min-height: 609px;
+      background-color: $primery-bgc-color;
+      opacity: 1;
+      border-radius: 4px;
+
+      transition: transform $animation, opacity $animation;
+    }
+    @media screen and (min-width: 1200px) {
+      width: 528px;
+      min-height: 581px;
+    }
   }
 }
-
 .backdrop.is-hidden .modal {
   transform: translate(-50%, -50%) scale(0.2) rotate(1turn);
   opacity: 0;
@@ -70,9 +87,15 @@
   }
 }
 .modal-form {
-  text-align: center;
+  @media screen and (min-width: 768px) {
+    margin: 208px 159px;
+    background-color: $primery-bgc-color;
+    padding: 40px;
+  }
+  @media screen and (min-width: 1200px) {
+    text-align: center;
+  }
 }
-
 .modal-icon {
   fill: currentColor;
 }
@@ -189,10 +212,19 @@ textarea {
   }
 }
 .checkbox-text {
-  font-style: normal;
-  font-weight: 400;
-  line-height: 1.71;
-  text-underline-position: under;
+  @media screen and (max-width: 1199px) {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.17;
+    text-underline-position: under;
+  }
+  @media screen and (min-width: 1200px) {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    text-underline-position: under;
+  }
 }
 .modal-form-btn {
   border-radius: 4px;
