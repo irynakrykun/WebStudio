@@ -43,18 +43,20 @@
 }
 
 .hero-title {
-  @media screen and (max-width: 1199px) {
+  width: 300px;
+  margin: 0 auto;
+  font-weight: 900;
+  font-size: 26px;
+  line-height: 1.62;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: $primery-bgc-color;
+  margin-bottom: 30px;
+  @media screen and (min-width: 480px) {
     width: 360px;
-    margin: 0 auto;
-    font-weight: 900;
-    font-size: 26px;
-    line-height: 1.62;
-    text-align: center;
-    letter-spacing: 0.06em;
-    text-transform: uppercase;
-    color: $primery-bgc-color;
-    margin-bottom: 30px;
   }
+
   @media screen and (min-width: 1200px) {
     width: 696px;
     font-size: 44px;
