@@ -1,5 +1,5 @@
 .features__item {
-  @media screen and (max-width: 767px) {
+  @media screen and (min-width: 320px) and (max-width: 767px) {
     margin-bottom: 30px;
   }
   &:last-child {
@@ -48,19 +48,11 @@
 .features__text {
   @media screen and (min-width: 320px) {
     width: 100%;
+    font-weight: 400;
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
-    margin-bottom: 30px;
     color: $primery-text-color;
-  }
-  @media screen and (min-width: 768px) {
-    margin-bottom: 0;
-  }
-}
-.features__text:last-child {
-  @media screen and (min-width: 320px) {
-    margin-bottom: 0;
   }
 }
 .features__icon {
