@@ -7,6 +7,12 @@
     display: flex;
     flex-wrap: wrap;
     align-items: baseline;
+    justify-content: space-around;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 1200px;
+    display: flex;
+    align-items: baseline;
   }
 }
 .footer-logo {
@@ -71,13 +77,11 @@ address .link {
   margin: 0;
   margin-top: 60px;
   text-align: center;
-
   @media screen and (min-width: 768px) {
-    margin-left: auto;
+    margin: 0;
   }
+
   @media screen and (min-width: 1200px) {
-    width: 206px;
-    height: 80px;
     margin-left: 70px;
   }
 }
@@ -135,9 +139,7 @@ address .link {
   margin: 0;
   text-align: center;
   margin-top: 60px;
-  @media screen and (min-width: 768px) {
-    margin-left: 160px;
-  }
+
   @media screen and (min-width: 1200px) {
     margin: 0;
     margin-left: auto;
