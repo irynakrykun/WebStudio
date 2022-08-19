@@ -70,22 +70,22 @@ img {
   margin-left: auto;
   margin-right: auto;
 }
+
 @media screen and (min-width: 480px) {
-  .container .container {
+  .container {
     width: 480px;
   }
 }
 @media screen and (min-width: 768px) {
-  .container .container {
+  .container {
     width: 768px;
   }
 }
 @media screen and (min-width: 1200px) {
-  .container .container {
+  .container {
     width: 1200px;
   }
 }
-
 .button, .footer-button {
   border-radius: 4px;
   border: none;
@@ -883,7 +883,7 @@ textarea:hover, textarea:focus {
   background-color: #2196f3;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (min-width: 320px) and (max-width: 767px) {
   .features__item {
     margin-bottom: 30px;
   }
@@ -943,22 +943,11 @@ textarea:hover, textarea:focus {
 @media screen and (min-width: 320px) {
   .features__text {
     width: 100%;
+    font-weight: 400;
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
-    margin-bottom: 30px;
     color: #757575;
-  }
-}
-@media screen and (min-width: 768px) {
-  .features__text {
-    margin-bottom: 0;
-  }
-}
-
-@media screen and (min-width: 320px) {
-  .features__text:last-child {
-    margin-bottom: 0;
   }
 }
 
@@ -1257,7 +1246,6 @@ textarea:hover, textarea:focus {
 }
 @media screen and (min-width: 1200px) {
   .footer-container {
-    width: 1200px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1569,11 +1557,13 @@ address .link:hover, address .link:focus {
   }
 }
 
-.portfolio-item {
-  margin-bottom: 30px;
-}
-.portfolio-item :last-child {
-  margin-bottom: 0;
+@media screen and (max-width: 480px) {
+  .portfolio-item {
+    margin-bottom: 30px;
+  }
+  .portfolio-item :last-child {
+    margin-bottom: 0;
+  }
 }
 
 @media screen and (min-width: 768px) {
